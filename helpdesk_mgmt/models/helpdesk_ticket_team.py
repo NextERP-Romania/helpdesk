@@ -76,8 +76,10 @@ class HelpdeskTeam(models.Model):
                 record.todo_ticket_ids.filtered(lambda ticket: ticket.priority == "3")
             )
 
-    def get_alias_model_name(self, vals):
-        return "helpdesk.ticket"
+    def _alias_get_creation_values(self):
+        values = super()._alias_get_creation_values()
+        values["alias_model_id"] = self.env["ir.model"]._get("helpdesk.ticket").id
+        return values
 
     def get_alias_values(self):
         values = super().get_alias_values()

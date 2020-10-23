@@ -250,7 +250,8 @@
                                     data-toggle="dropdown"
                                     href="#"
                                 >
-                                    <span class="fa fa-ellipsis-v" aria-hidden="true" />
+                                    <span class="fa " aria-hidden="true" />
+                                    <!-- ellipsis -->
                                 </a>
                                 <ul
                                     class="dropdown-menu"
