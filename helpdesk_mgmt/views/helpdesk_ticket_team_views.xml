@@ -57,7 +57,9 @@
                                     name="edit_alias"
                                     style="display: inline;"
                                 >
-                                    <field name="alias_name" class="oe_inline" />@<field
+                                    <field name="alias_name" class="oe_inline" />
+                                    @
+                                    <field
                                         name="alias_domain"
                                         class="oe_inline"
                                         readonly="1"
@@ -85,6 +87,7 @@
                             />
                         </group>
                         <group name="right">
+
                         </group>
                     </group>
                     <notebook>

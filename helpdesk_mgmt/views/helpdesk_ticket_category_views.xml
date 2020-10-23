@@ -21,6 +21,7 @@
         <field name="arch" type="xml">
             <form string="Stages">
                 <header>
+
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
